@@ -24,8 +24,6 @@ window.addEventListener('DOMContentLoaded', (e) => {
       dogBreeds.append(li);
     });
   
-  
-  
   };
   
   
