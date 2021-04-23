@@ -19,6 +19,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
     
 
    for (const breed in breeds) {
+     console.log('hi')
       const li=document.createElement('li');
       li.textContent=breed.message;
       
