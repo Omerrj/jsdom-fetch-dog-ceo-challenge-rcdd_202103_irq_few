@@ -19,15 +19,18 @@ window.addEventListener('DOMContentLoaded', (e) => {
     
     const breeds=Object.keys(data.message)
     
-   for (const breed in breeds) {
+    breeds.forEach((breed)=>{
+      
     console.log(breed)
+   
     
 
       const li=document.createElement('li');
       li.textContent=breed.message;
       
       dogBreeds.append(li);
-    }
+    })
+    
   
   };
   
