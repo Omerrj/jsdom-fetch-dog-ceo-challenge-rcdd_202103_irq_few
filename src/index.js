@@ -7,8 +7,8 @@ window.addEventListener('DOMContentLoaded', (e) => {
   
   let filter;
   
-  breedDropdown.onchange=()=>{
-    console.log('hello')
+  breedDropdown.onchange=(e)=>{
+    console.log(e.target.value)
   }
   const renderImgs=(imgs)=>{
     imgs.message.forEach((img)=>{
