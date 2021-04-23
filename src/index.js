@@ -10,7 +10,8 @@ let breeds;
   const listBreed=(data)=>{
     
     dogBreeds.innerHTML=""
-    breeds.forEach((breed)=>{
+    
+    data.forEach((breed)=>{
       
       const li=document.createElement('li');
       li.textContent=breed;
