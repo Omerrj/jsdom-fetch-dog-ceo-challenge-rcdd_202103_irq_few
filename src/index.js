@@ -26,7 +26,7 @@ let breeds;
     console.log(breeds)
     const filteredBreeds=breeds.filter((b)=>b[0]==filter)
     console.log(filteredBreeds)
-    listBreed(breeds)
+    listBreed(filteredBreeds)
   }
   
   const renderImgs=(imgs)=>{
