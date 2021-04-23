@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
       
       const li=document.createElement('li');
       li.textContent=breed;
-      li.onclick=()=>{li.style.color='red'}
+      li.onclick=()=>li.style.color='red'
       dogBreeds.append(li);
     })
     
