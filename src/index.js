@@ -18,9 +18,9 @@ window.addEventListener('DOMContentLoaded', (e) => {
   const listBreed=(data)=>{
     
     const breeds=Object.keys(data.message)
-   for (const breed in breeds.message) {
+   for (const breed in breeds) {
     console.log(breeds)
-    const region=
+    
     console.log(region)
       const li=document.createElement('li');
       li.textContent=breed.message;
