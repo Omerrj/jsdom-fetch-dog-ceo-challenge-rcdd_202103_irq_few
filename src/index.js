@@ -26,9 +26,9 @@ window.addEventListener('DOMContentLoaded', (e) => {
   
   
   
-  
-  
   };
+  
+  
   fetch(imgUrl)
   .then(r=>r.json())
   .then(renderImgs)
