@@ -53,7 +53,7 @@ let breeds;
   .then(d=>{
     
     breeds=d;
-    listBreed(d)
+    listBreed(breeds)
     
   })
   .catch(e=>console.log(e));
