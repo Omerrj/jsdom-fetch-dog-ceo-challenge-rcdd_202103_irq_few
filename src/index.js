@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
   const dogBreeds=document.getElementsByTagName('ul')[0];
   const breedDropdown=document.getElementById('breed-dropdown');
   
+  let filter
   const renderImgs=(imgs)=>{
     imgs.message.forEach((img)=>{
       const image=document.createElement('img');
