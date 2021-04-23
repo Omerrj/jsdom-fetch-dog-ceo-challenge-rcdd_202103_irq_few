@@ -9,7 +9,7 @@ let breeds;
   
   const listBreed=(data)=>{
     
-    const breeds=Object.keys(data.message)
+    
     breeds.forEach((breed)=>{
       
       const li=document.createElement('li');
@@ -52,7 +52,7 @@ let breeds;
   .then(r=>r.json())
   .then(d=>{
     
-    breeds=d;
+    breeds=Object.keys(d.message)
     listBreed(breeds)
     
   })
