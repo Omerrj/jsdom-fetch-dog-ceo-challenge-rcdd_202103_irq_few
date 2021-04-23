@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
   const dogImageContainer=document.getElementById("dog-image-container");
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
   const breedUrl = 'https://dog.ceo/api/breeds/list/all';
-  const dogBreeds=document.getElementById('dog-breeds');
+  const dogBreeds=document.getElementsByTagName('ul')[0];
   
   const renderImgs=(imgs)=>{
     imgs.message.forEach((img)=>{
