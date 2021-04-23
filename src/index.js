@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
     
     breeds.message.forEach((breed)=>{
       const li=document.createElement('li');
-      li.textContent=breed;
+      li.textContent=breed.message;
       
       dogBreeds.append(li);
     });
