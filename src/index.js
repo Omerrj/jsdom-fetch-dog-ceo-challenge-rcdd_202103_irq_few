@@ -6,6 +6,10 @@ window.addEventListener('DOMContentLoaded', (e) => {
   const breedDropdown=document.getElementById('breed-dropdown');
   
   let filter;
+  
+  breedDropdown.onchange=()=>{
+    console.log('hello')
+  }
   const renderImgs=(imgs)=>{
     imgs.message.forEach((img)=>{
       const image=document.createElement('img');
