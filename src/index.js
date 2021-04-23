@@ -24,7 +24,7 @@ let breeds;
   breedDropdown.onchange=(e)=>{
     filter=e.target.value
     console.log(breeds)
-    const filteredBreeds=breeds.filter((b)=>b.key[0]='a')
+    const filteredBreeds=breeds.filter((b)=>b.key[0]=='a')
     listBreed(breeds)
   }
   
