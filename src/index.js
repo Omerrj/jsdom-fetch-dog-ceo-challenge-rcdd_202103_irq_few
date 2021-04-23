@@ -24,6 +24,11 @@ window.addEventListener('DOMContentLoaded', (e) => {
       dogBreeds.append(li);
     });
   
+  
+  
+  
+  
+  };
   fetch(imgUrl)
   .then(r=>r.json())
   .then(renderImgs)
@@ -34,10 +39,5 @@ window.addEventListener('DOMContentLoaded', (e) => {
   .then(r=>r.json())
   .then(listBreed)
   .catch(e=>console.log(e));
-  
-  
-  
-  
-  };
 
 });
