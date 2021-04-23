@@ -17,14 +17,13 @@ window.addEventListener('DOMContentLoaded', (e) => {
   
   const listBreed=(breeds)=>{
     
-  console.log(`${property}: ${object[property]}`);
-}
+
    for (const breed in breeds) {
       const li=document.createElement('li');
       li.textContent=breed.message;
       
       dogBreeds.append(li);
-    });
+    }
   
   };
   
