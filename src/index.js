@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
   breedDropdown.onchange=(e)=>{
     filter=e.target.value
   }
+  
   const renderImgs=(imgs)=>{
     imgs.message.forEach((img)=>{
       const image=document.createElement('img');
