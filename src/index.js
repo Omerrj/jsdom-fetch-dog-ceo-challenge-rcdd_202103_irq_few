@@ -18,16 +18,11 @@ window.addEventListener('DOMContentLoaded', (e) => {
   const listBreed=(data)=>{
     
     const breeds=Object.keys(data.message)
-    
     breeds.forEach((breed)=>{
       
-    console.log(breed)
-   
-    
-
       const li=document.createElement('li');
       li.textContent=breed;
-      
+      li.onClick=()=>li.style.color='red'
       dogBreeds.append(li);
     })
     
