@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
   
   fetch(breedUrl)
   .then(r=>r.json())
-  .then(listBreed)
+  .then(console.log)
   .catch(e=>console.log(e));
 
 });
