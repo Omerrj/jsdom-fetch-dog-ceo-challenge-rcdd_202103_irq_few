@@ -45,8 +45,9 @@ let breeds
   
   fetch(breedUrl)
   .then(r=>r.json())
-  .then(d=>{breeds=d;
-            listBreed(d)
+  .then(d=>{
+    breeds=d;
+    listBreed(d)
     
   })
   .catch(e=>console.log(e));
