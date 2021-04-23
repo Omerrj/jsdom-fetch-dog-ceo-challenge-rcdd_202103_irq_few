@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
   const dogBreeds=document.getElementsByTagName('ul')[0];
   const breedDropdown=document.getElementById('breed-dropdown');
   
-  let filter;
+let breeds
   
   breedDropdown.onchange=(e)=>{
     filter=e.target.value
@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
   
   fetch(breedUrl)
   .then(r=>r.json())
-  .then(listBreed)
+  .then(d=>{breeds=d;listBreed(d)})
   .catch(e=>console.log(e));
 
 });
