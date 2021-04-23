@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
     
 
       const li=document.createElement('li');
-      li.textContent=breed.message;
+      li.textContent=breed;
       
       dogBreeds.append(li);
     })
