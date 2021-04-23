@@ -5,22 +5,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
   const dogBreeds=document.getElementsByTagName('ul')[0];
   const breedDropdown=document.getElementById('breed-dropdown');
   
-let breeds
-  
-  breedDropdown.onchange=(e)=>{
-    filter=e.target.value
-  }
-  
-  const renderImgs=(imgs)=>{
-    imgs.message.forEach((img)=>{
-      const image=document.createElement('img');
-      image.width=200;
-      image.height=200;
-      image.src=img;
-      
-      dogImageContainer.append(image);
-    });
-  };
+let breeds;
   
   const listBreed=(data)=>{
     
@@ -35,6 +20,24 @@ let breeds
     
   
   };
+  
+  breedDropdown.onchange=(e)=>{
+    filter=e.target.value
+    listBreed(breeds)
+  }
+  
+  const renderImgs=(imgs)=>{
+    imgs.message.forEach((img)=>{
+      const image=document.createElement('img');
+      image.width=200;
+      image.height=200;
+      image.src=img;
+      
+      dogImageContainer.append(image);
+    });
+  };
+  
+  
   
   
   fetch(imgUrl)
